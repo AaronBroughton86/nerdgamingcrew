@@ -1,0 +1,76 @@
+<!DOCTYPE html >
+<html lang="en">
+
+<head>
+<!-- Bootstrap --> 
+<link href ="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Main CSS -->
+<link rel="stylesheet" type="text/css" href="../index.css"/>
+
+<meta charset="utf-8" />
+<title>NERD GAMING CREW</title>
+<style>
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+</style>
+</head>
+
+<body>
+
+<h1>NERD GAMING CREW</h1>
+
+<div class="topnav" id="myTopnav">	
+ <a href="../index.html">HOME</a>
+ <a href="../webpages/calendar.html">CALENDAR</a>
+ <a href="../webpages/gallery.html">GALLERY</a>
+ <a href="../webpages/members.html">MEMBERS</a>
+ <a href="../webpages/join.html">JOIN</a>
+ <a href="../webpages/links.html">LINKS</a>
+ <a href="../webpages/videos.html">VIDEOS</a>
+ <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div style="padding-left:16px">
+  
+<h2>Current Members</h2>
+
+</div>
+
+<div class="membersindex">
+<p><strong>Aaron Broughton <a href="https://www.youtube.com/channel/UCYm02Dr_yYDWvB1TRRW2sfw"><img border="0" alt="YoutubeImage" src="../pictures/youtubeImage.png" width="50" height="50"></a> <a href="https://twitter.com/AARONTBROUGHTON"><img border="0" alt="TwitterImage" src="../pictures/twitterImage.png" width="50" height="50"></a> <a href="https://www.instagram.com/broughtonaaron/?hl=en"><img border="0" alt="InstagramImage" src="../pictures/instagramImage.png" width="50" height="50"></a></strong></p> 
+<p><strong>Tanner Bowman</strong></p>
+<p><strong>Kyle Spino</strong></p>
+<p><strong>Dylan Spino</strong></p>
+<p><strong>Brian Malehorn</strong></p>
+<p><strong>Brian Zimmerman</strong></p>
+<p><strong>Brady Stover</strong></p>
+<p><strong>Derrick Brown</strong></p>
+<p><strong>Logan Warner</strong></p>
+<p><strong>Dylan Mussleman</strong></p>
+</div>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+</body>
