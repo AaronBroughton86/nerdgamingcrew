@@ -6,27 +6,15 @@
 <link href ="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 <!-- Main CSS -->
-<link rel="stylesheet" type="text/css" href="../index.css"/>
+<link rel="stylesheet" type="text/css" href="../index.css">
 
+<!-- Css for Social Media -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- JavaScript -->
+<script src="../index.js"></script>
 <meta charset="utf-8" />
-<title>NERD GAMING CREW</title>
-<style>
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-</style>
+<title>NGC MEMBERS</title>
 </head>
 
 <body>
@@ -46,23 +34,28 @@
 
 <div style="padding-left:16px">
 
-<h2 class="nerdVideosH2">Nerd Gaming Crew Gallery</h2>
-
-<video width="320" height="240" poster="../pictures/video1.gif" controls>
-   <source src="../videos/video1.mp4" type="video/mp4">
-   Your browser does not support the video tag.
-</video>
-
-</div>
+<h2>Pick a game to watch nerd</h2>
+<select id="selectVideoGame">
+    <option id="nerdGames" value="https://www.youtube.com/embed/videoseries?list=PLoZZSa6eb9HLwm2r186S6YgIHH6kKY27f&amp;controls=0?ecver=2">Halo 3</option>
+    <option id="nerdGames" value="https://www.youtube.com/embed/videoseries?list=PLoZZSa6eb9HLj9mkJtd7lBk4taRPJ6mDm&amp;controls=0?ecver=2">Call of Duty</option>
+    <option id="nerdGames" value="https://www.youtube.com/embed/videoseries?list=PLoZZSa6eb9HJpslF7115hlMaKToN30tIs&amp;controls=0?ecver=2">Gears of War</option>
+    <option id="nerdGames" value="https://www.youtube.com/embed/videoseries?list=PLoZZSa6eb9HJLHv8Qa2Owl2VjZi2YMDBp&amp;controls=0?ecver=2">Darksiders</option>
+</select>
+<button onClick="loadPages()">Watch Nerd Clips</button>
+<iframe id="myFrame" type="text/html" frameborder="0" height="725px" width="100%" src="" allowfullscreen></iframe>
 
 <script>
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
+var urlSelect = document.getElementById('selectVideoGame'),
+    myFrame = document.getElementById('myFrame');
+
+function loadPages() {
+    myFrame.src = "";
+    setTimeout(function () {
+        myFrame.src = urlSelect.value;
+    }, 0);
 }
 </script>
+
+
+
 </body>
