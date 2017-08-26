@@ -14,8 +14,7 @@
 <!-- JavaScript -->
 <script src="../index.js"></script>
 <meta charset="utf-8" />
-<title>NGC VIDEOS</title>
-
+<title>NGC MEMBERS</title>
 </head>
 
 <body>
@@ -35,13 +34,28 @@
 
 <div style="padding-left:16px">
 
-<h2 class="nerdVideosH2">Nerd Gaming Crew Gallery</h2>
+<h2>Pick a game to watch nerd</h2>
+<select id="selectVideoGame">
+    <option id="nerdGames" value="https://www.youtube.com/embed/videoseries?list=PLoZZSa6eb9HLwm2r186S6YgIHH6kKY27f&amp;controls=0?ecver=2">Halo 3</option>
+    <option id="nerdGames" value="https://www.youtube.com/embed/videoseries?list=PLoZZSa6eb9HLj9mkJtd7lBk4taRPJ6mDm&amp;controls=0?ecver=2">Call of Duty</option>
+    <option id="nerdGames" value="https://www.youtube.com/embed/videoseries?list=PLoZZSa6eb9HJpslF7115hlMaKToN30tIs&amp;controls=0?ecver=2">Gears of War</option>
+    <option id="nerdGames" value="https://www.youtube.com/embed/videoseries?list=PLoZZSa6eb9HJLHv8Qa2Owl2VjZi2YMDBp&amp;controls=0?ecver=2">Darksiders</option>
+</select>
+<button onClick="loadPages()">Watch Nerd Clips</button>
+<iframe id="myFrame" type="text/html" frameborder="0" height="725px" width="100%" src="" allowfullscreen></iframe>
 
-<video width="320" height="240" poster="../pictures/video1.gif" controls>
-   <source src="../videos/video1.mp4" type="video/mp4">
-   Your browser does not support the video tag.
-</video>
+<script>
+var urlSelect = document.getElementById('selectVideoGame'),
+    myFrame = document.getElementById('myFrame');
 
-</div>
+function loadPages() {
+    myFrame.src = "";
+    setTimeout(function () {
+        myFrame.src = urlSelect.value;
+    }, 0);
+}
+</script>
+
+
 
 </body>
