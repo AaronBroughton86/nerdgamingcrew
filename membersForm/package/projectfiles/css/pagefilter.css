@@ -1,0 +1,27 @@
+table.pages {
+	border-collapse: collapse;
+	height:30px;
+	margin: 4px 4px 4px 4px;
+	font-family:"Roboto", sans-serif;
+	font-weight:700;
+	font-size:16.0px;
+}
+th.pages {
+	background: #90a878;
+	width: 30px;
+	color: #fff;
+	font-weight: 700;
+	padding: 0px 5px;
+	text-align: center;
+	font-family:"Roboto", sans-serif;
+	border-right: 1px solid ##90a878;
+	//line-height: 1.5;
+	border-radius:10px;
+}
+tr.pages.alt td.pages {
+	background: #90a878;
+}
+
+tr.pages.over td.pages, tr.pages:hover td.pages {
+	background: #90a878;
+}
