@@ -51,7 +51,10 @@
     "google-analytics": "",
     "cookiesAlert": "",
     "gdpr": "",
-    "siteUrl": "undefined"
+    "siteUrl": "undefined",
+    "publishType": "github",
+    "gitHubName": "aaronbroughton86",
+    "gitHubPath": "nerdgamingcrew"
   },
   "pages": {
     "index.html": {
