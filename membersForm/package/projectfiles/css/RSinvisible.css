@@ -1,0 +1,9 @@
+.RSinvisible{
+visibility:hidden;opacity:0;
+display:none;
+}
+.mbr-small-footer p {
+    margin-bottom: 0;
+    width: 100% !important;
+    text-align: center !important;
+}
